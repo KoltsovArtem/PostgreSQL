@@ -1,8 +1,6 @@
 package postgresql
 
-import (
-	"github.com/jackc/pgx"
-)
+import "github.com/jackc/pgx"
 
 type Client interface {
 	Exec(sql string, arguments ...interface{}) (commandTag pgx.CommandTag, err error)
